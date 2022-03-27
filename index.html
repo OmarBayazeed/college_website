@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
@@ -46,7 +47,7 @@
 
 
 
-    <section class="course">
+    <section class="course wow zoomIn">
         <h1>courses we offer</h1>
         <p>ipsum dolor sit amet consectetur adipisicing elit.</p>
 
@@ -68,7 +69,7 @@
 
     <!-- --------Campus--------- -->
 
-    <section class="campus">
+    <section class="campus wow zoomIn">
         <h1>our global campus</h1>
         <p>ipsum dolor sit amet consectetur adipisicing elit.</p>
 
@@ -98,7 +99,7 @@
    
 <!--     ----------Facilities---------- -->
      
-    <section class="facilities">
+    <section class="facilities wow zoomIn">
         <h1>our facilities</h1>
         <p>ipsum dolor sit amet consectetur adipisicing elit.</p>
 
@@ -127,7 +128,7 @@
 
 
 
-    <section class="testimonials">
+    <section class="testimonials wow zoomIn">
         <h1>What Our Students say</h1>
         <p>ipsum dolor sit amet consectetur adipisicing elit.</p>
 
@@ -167,8 +168,8 @@
 
 
 
-    <section class="cta">
-        <h1>Enroll For Our Various online courses<br>Anywhere From The World</h1>
+    <section class="cta ">
+        <h1 class="wow zoomIn">Enroll For Our Various online courses<br>Anywhere From The World</h1>
         <a href="" class="hero-btn">CONTACT US</a>
     </section>
 
@@ -197,12 +198,13 @@
 
 
 
-
+<script src="wow.min.js"></script>
 
 
 
 <script>
     
+    new WOW().init();
 
     var navlinks = document.getElementById("navlinks");
 

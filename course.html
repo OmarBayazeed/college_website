@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
@@ -39,7 +41,7 @@
     <!-- ------------courses----------- -->
     
 
-    <section class="course">
+    <section class="course wow zoomIn">
         <h1>courses we offer</h1>
         <p>ipsum dolor sit amet consectetur adipisicing elit.</p>
 
@@ -64,7 +66,7 @@
     <!-- ------------facilities----------- -->
 
 
-    <section class="facilities">
+    <section class="facilities wow zoomIn">
         <h1>our facilities</h1>
         <p>ipsum dolor sit amet consectetur adipisicing elit.</p>
 
@@ -113,12 +115,13 @@
 
 
 
-
+<script src="wow.min.js"></script>
 
 
 
 <script>
     
+    new WOW().init();
 
     var navlinks = document.getElementById("navlinks");
 
@@ -136,6 +139,7 @@
 </script>
 
 <script>
+
     
     var darkicon = document.getElementById("darkicon");
     darkicon.onclick = function(){

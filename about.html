@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
@@ -39,7 +39,7 @@
     <!-- ------------About Us Content----------- -->
 
 
-    <section class="about_us">
+    <section class="about_us wow zoomIn" data-wow-delay="1s">
         <div class="row">
             <div class="about_col">
                 <h1>We are The World's largest university</h1>
@@ -80,7 +80,7 @@
 
 
 
-
+<script src="wow.min.js"></script>
 
 
 <script>
@@ -102,6 +102,8 @@
 </script>
 
 <script>
+
+    new WOW().init();
     
     var darkicon = document.getElementById("darkicon");
     darkicon.onclick = function(){

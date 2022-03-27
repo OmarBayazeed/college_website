@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
@@ -40,7 +40,7 @@
     
 
     <section class="blog-content">
-        <div class="blog-left">
+        <div class="blog-left wow zoomIn" data-wow-delay="1s">
             <img src="images/certificate.jpg">
             <h2>Our Certificate And Online Programs for 2022</h2>
             <p>ipsum dolor sit amet consectetur adipisicing elit. Architecto in tenetur at cupiditate, culpa provident impedit iure quidem dolor sit amet consectetur adipisicing elit. Architecto in tenetur at cupiditate, culpa provident impedit iure quidem soluta possimus soluta possimus a eveniet maiores quas adipisci. Quae, est? Consequatur officia, aut!quidem dolor sit amet consectetur adipisicing elit. Architecto in tenetur at cupiditate, culpa provident impedit iure quidem soluta possimus soluta possimus a eveniet maiores quas adipisci. Quae, est? Consequatur officia, aut!quidem dolor sit amet consectetur adipisicing elit. Architecto in tenetur at cupiditate, culpa provident impedit iure quidem soluta possimus soluta possimus a eveniet maiores quas adipisci. Quae, est? Consequatur officia, aut!</p>
@@ -53,7 +53,7 @@
 
 
             
-            <div class="comment-box">
+            <div class="comment-box wow zoomIn">
                 <h3>leave a comment</h3>
                 <form class="comment-form">
                     <input type="text" placeholder="Enter Name">
@@ -70,7 +70,7 @@
         
 
 
-        <div class="blog-right">
+        <div class="blog-right wow zoomIn" data-wow-delay="1.5s">
             <h3>Post Categories</h3>
             <div>
                 <span>Business Analytics</span>
@@ -130,10 +130,12 @@
 
 
 
-
+<script src="wow.min.js"></script>
 
 
 <script>
+
+    new WOW().init();
     
 
     var navlinks = document.getElementById("navlinks");
