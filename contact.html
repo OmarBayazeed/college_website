@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>university</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+
+    <div id="preloader"></div>
+
+    <!-- --------Header--------- -->
+
+    <section class="sub_header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav_links" id="navlinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <img src="images/moon1.png" id="darkicon">
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+
+
+    <!-- ------------contact us----------- -->
+
+
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6836.964059053985!2d31.363644724038302!3d31.040677876123613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f79e78984955f7%3A0xfc2d3fa73fa8484e!2z2KfZhNil2K_Yp9ix2Kkg2KfZhNi52KfZhdip2Iwg2KzYp9mF2LnYqSDYp9mE2YXZhti12YjYsdip!5e0!3m2!1sar!2seg!4v1631952599324!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fas fa-home"></i>
+                    <span>
+                        <h5>XYZ Road, ABC Building</h5>
+                        <p>Egypt, Cairo, Alamen</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-phone"></i>
+                    <span>
+                        <h5>+20 1065242790</h5>
+                        <p>sunday to monday, 10 AM : 6 PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="far fa-envelope"></i>
+                    <span>
+                        <h5>omtb1990@gmail.com</h5>
+                        <p>Email Us</p>
+                    </span>
+                </div>
+            </div>
+
+            <div class="contact-col">
+                    <form action="form.php" method="post">
+                        <input type="text" name="name" placeholder="Enter Name" required>
+                        <input type="email" name="email" placeholder="Enter Email" required>
+                        <input type="text" name="subject" placeholder="Enter Subject" required>
+                        <textarea rows="9"  name="message"  placeholder="Message" required></textarea>
+                        <button class="red-btn" type="submit">SEND MESSAGE</button>
+                    </form>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+    
+     <!-- --------Footer---------- -->
+
+
+     <section class="footer">
+         <h4>About Us</h4>
+         <p> ipsum dolor sit amet consectetur, adipisicing elit. Perferendis nulla adipisci consectetur placeat, vitae atque. <br>Quo iste accusamus doloremque sequi, laborum labore inventore sit hic, sunt nam excepturi, officiis alias.</p>
+
+         <div class="icons">
+             <i class="fab fa-facebook"></i>
+             <i class="fab fa-twitter"></i>
+             <i class="fab fa-youtube"></i>
+             <i class="fab fa-instagram"></i>
+
+             <p>Made by omar byazid</p>
+         </div>
+     </section>
+    
+
+
+
+
+
+
+
+
+
+<script>
+    
+
+    var navlinks = document.getElementById("navlinks");
+
+    function showMenu(){
+        navlinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navlinks.style.right = "-200px";
+    }
+
+
+
+
+</script>
+
+
+<script>
+    var preloader = document.getElementById("preloader");
+    window.addEventListener("load", function(){
+        preloader.style.display = "none";
+    })
+</script>
+
+
+<script>
+    
+    var darkicon = document.getElementById("darkicon");
+    darkicon.onclick = function(){
+        document.body.classList.toggle("darktheme");
+        
+        if(document.body.classList.contains("darktheme")){
+            darkicon.src = "images/sun.png";
+        }
+        else{
+            darkicon.src = "images/moon1.png";
+        }
+        }
+        
+</script>
+
+
+
+
+
+</body>
+</html>

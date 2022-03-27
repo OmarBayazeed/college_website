@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>university</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+
+    <!-- --------Header--------- -->
+
+    <section class="sub_header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav_links" id="navlinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <img src="images/moon1.png" id="darkicon">
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Courses</h1>
+    </section>
+
+
+
+    <!-- ------------courses----------- -->
+    
+
+    <section class="course">
+        <h1>courses we offer</h1>
+        <p>ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>intermediate</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, quod. Libero sapiente quibusdam voluptatem dolor iste ipsum, eveniet quaerat eius debitis explicabo illo eligendi laudantium fuga, iusto beatae sint amet.</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, quod. Libero sapiente quibusdam voluptatem dolor iste ipsum, eveniet quaerat eius debitis explicabo illo eligendi laudantium fuga, iusto beatae sint amet.</p>
+            </div>
+            <div class="course-col">
+                <h3>post Graduation</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, quod. Libero sapiente quibusdam voluptatem dolor iste ipsum, eveniet quaerat eius debitis explicabo illo eligendi laudantium fuga, iusto beatae sint amet.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ------------facilities----------- -->
+
+
+    <section class="facilities">
+        <h1>our facilities</h1>
+        <p>ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/library.png">
+                <h3>World Class Library</h3>
+                <p>ipsum dolor sit amet consectetur adipisicing elit. Magnam fugit ex natus at quo nesciunt recusandae odit possimus in nisi eaque quod cumque quasi, optio impedit necessitatibus pariatur illum quis!</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/basketball.png">
+                <h3>Largest Play Ground</h3>
+                <p>ipsum dolor sit amet consectetur adipisicing elit. Magnam fugit ex natus at quo nesciunt recusandae odit possimus in nisi eaque quod cumque quasi, optio impedit necessitatibus pariatur illum quis!</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/cafeteria.png">
+                <h3>Tasty and Healthy Food</h3>
+                <p>ipsum, dolor sit amet consectetur adipisicing elit. Nisi, sit sint modi ad dolores rerum harum distinctio assumenda voluptatibus magni at dolorem cum amet alias fugit molestiae maxime qui quibusdam.</p>
+            </div>
+        </div>        
+    </section>
+    
+
+
+
+    
+     <!-- --------Footer---------- -->
+
+
+     <section class="footer">
+         <h4>About Us</h4>
+         <p> ipsum dolor sit amet consectetur, adipisicing elit. Perferendis nulla adipisci consectetur placeat, vitae atque. <br>Quo iste accusamus doloremque sequi, laborum labore inventore sit hic, sunt nam excepturi, officiis alias.</p>
+
+         <div class="icons">
+             <i class="fab fa-facebook"></i>
+             <i class="fab fa-twitter"></i>
+             <i class="fab fa-youtube"></i>
+             <i class="fab fa-instagram"></i>
+
+             <p>Made by omar byazid</p>
+         </div>
+     </section>
+    
+
+
+
+
+
+
+
+
+
+<script>
+    
+
+    var navlinks = document.getElementById("navlinks");
+
+    function showMenu(){
+        navlinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navlinks.style.right = "-200px";
+    }
+
+
+
+
+</script>
+
+<script>
+    
+    var darkicon = document.getElementById("darkicon");
+    darkicon.onclick = function(){
+        document.body.classList.toggle("darktheme");
+        
+        if(document.body.classList.contains("darktheme")){
+            darkicon.src = "images/sun.png";
+        }
+        else{
+            darkicon.src = "images/moon1.png";
+        }
+        }
+        
+</script>
+
+
+
+
+
+</body>
+</html>
